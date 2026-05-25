@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #050d1a;
+  color: #f0f4ff;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #050d1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a6fff;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d8bff;
+}
+
+/* Grid background pattern */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(26, 111, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 111, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #1a6fff, #3d8bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(26, 111, 255, 0.3);
+  color: #f0f4ff;
+}
+
+/* Ensure cursor none applies everywhere */
+a, button, input, textarea, select, [role="button"] {
+  cursor: none !important;
 }
