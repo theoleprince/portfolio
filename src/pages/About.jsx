@@ -69,7 +69,7 @@ export default function About() {
                 <div className="absolute inset-0 rounded-2xl bg-[#1a6fff]/20 blur-2xl scale-110 pointer-events-none" />
                 <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-[#1a6fff]/30 shadow-2xl shadow-[#1a6fff]/20">
                   <img
-                    src="/theophane.jpeg"
+                    src={`${import.meta.env.BASE_URL}theophane.jpeg`}
                     alt="Jiozang Théophane — Développeur Fullstack Senior"
                     className="w-full h-full object-cover object-top"
                     onError={(e) => {
@@ -126,7 +126,7 @@ export default function About() {
                   </a>
                 ))}
                 <a
-                  href="/cv.pdf"
+                  href={`${import.meta.env.BASE_URL}cv.pdf`}
                   download="CV_Jiozang_Theophane.pdf"
                   aria-label="Télécharger le CV"
                   className="inline-flex items-center gap-2 px-4 py-2 border border-[#1a6fff]/35 text-[#1a6fff] text-sm font-semibold rounded-xl hover:bg-[#1a6fff]/10 transition-all duration-200"

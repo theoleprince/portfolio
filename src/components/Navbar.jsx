@@ -99,7 +99,7 @@ export default function Navbar() {
 
           {/* CV download */}
           <a
-            href="/cv.pdf"
+            href={`${import.meta.env.BASE_URL}cv.pdf`}
             download="CV_Jiozang_Theophane.pdf"
             aria-label="Télécharger le CV"
             className="inline-flex items-center gap-2 px-4 py-2 border border-[#1a6fff]/35 text-[#1a6fff] text-sm font-medium rounded-lg hover:bg-[#1a6fff]/10 transition-all duration-200"
@@ -161,7 +161,7 @@ export default function Navbar() {
                   className="w-9 h-9 bg-[#112240] border border-white/[0.06] rounded-lg flex items-center justify-center text-[#8a9ab8] hover:text-[#f0f4ff] transition-colors">
                   <SiGitlab size={15} />
                 </a>
-                <a href="/cv.pdf" download="CV_Jiozang_Theophane.pdf" aria-label="Télécharger CV"
+                <a href={`${import.meta.env.BASE_URL}cv.pdf`} download="CV_Jiozang_Theophane.pdf" aria-label="Télécharger CV"
                   className="flex-1 flex items-center justify-center gap-2 py-2 border border-[#1a6fff]/35 text-[#1a6fff] text-sm font-medium rounded-lg">
                   <Download size={13} /> Télécharger CV
                 </a>

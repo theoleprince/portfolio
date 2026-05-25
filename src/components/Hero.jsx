@@ -97,7 +97,7 @@ export default function Hero() {
               </Link>
               {/* CV download — placer cv.pdf dans le dossier public/ */}
               <a
-                href="/cv.pdf"
+                href={`${import.meta.env.BASE_URL}cv.pdf`}
                 download="CV_Jiozang_Theophane.pdf"
                 aria-label="Télécharger le CV"
                 className="inline-flex items-center gap-2.5 px-6 py-3 border border-[#1a6fff]/40 text-[#1a6fff] font-semibold rounded-xl hover:bg-[#1a6fff]/10 transition-all duration-200 group"
@@ -158,7 +158,7 @@ export default function Hero() {
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-[#1a6fff]/30 shadow-lg shadow-[#1a6fff]/20 flex-shrink-0">
                     <img
-                      src="/theophane.jpeg"
+                      src={`${import.meta.env.BASE_URL}theophane.jpeg`}
                       alt="Jiozang Théophane"
                       className="w-full h-full object-cover"
                       onError={(e) => {
