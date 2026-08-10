@@ -4,6 +4,7 @@ import {
   ExternalLink, Layers,
   Package, Shield, Landmark, Bot, Brain, Heart, ShoppingBag,
   ShoppingCart, BarChart3, Building2, KeyRound, Users, Activity,
+  Store, Palette,
 } from 'lucide-react'
 
 // ── DATA ─────────────────────────────────────────────────────────────────────
@@ -103,6 +104,28 @@ const projects = [
       'E-commerce cross-platform avec paiement par tranches, live en France sur iOS & Android. Première livraison internationale.',
     tags: ['Ionic 6', 'Angular', 'Spring Boot', 'Capacitor'],
     link: null,
+  },
+  {
+    key: 'ortyva',
+    Icon: Store,
+    title: 'Ortyva',
+    subtitle: 'Commerce simplifié',
+    company: 'Projet personnel',
+    description:
+      'Plateforme e-commerce pensée pour simplifier les opérations commerciales : gestion de boutique en ligne, catalogue produits et transactions.',
+    tags: ['E-commerce', 'Web'],
+    link: 'https://ortyva.com',
+  },
+  {
+    key: 'artvisionafrica',
+    Icon: Palette,
+    title: 'ArtVision Africa',
+    subtitle: 'Achetez & vendez l\'art africain',
+    company: 'Projet personnel',
+    description:
+      'Marketplace dédié à l\'art africain, connectant artistes, collectionneurs et amateurs pour l\'achat et la vente d\'œuvres du continent.',
+    tags: ['Marketplace', 'E-commerce', 'Art'],
+    link: 'https://artvisionafrica.com',
   },
 ]
 
